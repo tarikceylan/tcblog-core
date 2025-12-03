@@ -1,0 +1,30 @@
+{
+  "name": "tcblog-core",
+  "version": "1.0.0",
+  "description": "Backend Repository for TCBlog",
+  "homepage": "https://github.com/tarikceylan/tcblog-core#readme",
+  "bugs": {
+    "url": "https://github.com/tarikceylan/tcblog-core/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarikceylan/tcblog-core.git"
+  },
+  "license": "ISC",
+  "author": "tarikceylan",
+  "type": "module",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "npx tsx watch --env-file=.env src/server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.10.1",
+    "jest": "^30.2.0",
+    "tsx": "^4.20.6"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
