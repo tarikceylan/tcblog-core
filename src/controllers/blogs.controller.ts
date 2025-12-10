@@ -24,7 +24,7 @@ export const getBlogById = async (req: Request, res: Response) => {
     if (!foundBlog || foundBlog.deleted) {
       return res.status(404).json({ message: `Blog is not found` });
     }
-    return res.status(200).json({ message: `Blog Found`, foundBlog });
+    return res.status(200).json(foundBlog);
   } catch (error) {
     return res.status(500).json({ message: `Something went wrong: ${error}` });
   }
